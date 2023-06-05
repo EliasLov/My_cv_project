@@ -1,10 +1,13 @@
-<script setup lang="ts"></script>
+<script></script>
 
 <template>
-  <div style="align-items: center; justify-content: center">
-    <h1>This is my start site</h1>
-    <br />
-    <p>You are going to authenticate here on this site</p>
+  <div id="nav">
+    <router-link to="/"> Home </router-link>
+    <router-link to="/cv"> Cv</router-link>
+  </div>
+
+  <div class="container">
+    <router-view></router-view>
   </div>
 </template>
 
