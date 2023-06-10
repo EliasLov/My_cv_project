@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-  <div class="cv">
+  <div class="cv" @mouseleave="hideHoverTextBox">
     <div class="container_left">
       <div class="small_text_box">
         <h3>Contact</h3>
@@ -111,6 +111,9 @@ export default {
     <hr width="1" size="1150" style="0 auto" />
 
     <div class="container_center">
+      <div class="title">
+        <h2>Elias Lövdinger CV</h2>
+      </div>
       <div class="main_text_box">
         <h2>Work Experience</h2>
         <hr />
@@ -144,9 +147,16 @@ export default {
           (VVS- och fastighetsprogrammet med inriktning Kyl- och värmepumpsteknik)
         </p>
       </div>
-      <hr />
       <div class="main_text_box">
+        <br />
         <h2>Other</h2>
+        <hr />
+        <h4>Språkkunskaper</h4>
+        <p class="small">Svenska, Engelska</p>
+        <h4>Körtkort</h4>
+        <p class="small">AM / B</p>
+        <h4>Referenser</h4>
+        <p class="small">Lämnas på begäran</p>
       </div>
     </div>
   </div>
@@ -158,12 +168,14 @@ export default {
   display: flex;
   max-width: 90rem;
 }
+
 .container_left {
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   justify-content: center;
   margin: 1rem;
 }
+
 .container_center {
   flex-direction: column;
   margin: 1rem;
@@ -178,12 +190,12 @@ export default {
 }
 
 ul {
-  list-style-type: none;
+  list-style-type: circle;
   margin: 0;
   padding: 10px;
-  list-style-type: circle;
   font-size: 12px;
 }
+
 ul li {
   margin-top: 10px;
 }
@@ -196,5 +208,9 @@ ul li {
   display: none;
   padding: 10px;
   background-color: rgb(192, 192, 192);
+}
+
+.title {
+  float: right;
 }
 </style>

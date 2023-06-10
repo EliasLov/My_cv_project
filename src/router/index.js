@@ -1,12 +1,18 @@
 import {createRouter, createWebHistory} from 'vue-router'
 
-import home from '@/views/Home_page.vue'
+import github from '@/views/Github.vue'
 
 import cv from '@/views/CV.vue'
 
+import ai from '@/views/WiseWordsFromAi.vue'
+
+ 
 const routes = [
-    {path: '/', name: 'home', component: home,},
-    {path: '/cv', name: 'cv', component: cv,},
+    {path: '/', name: 'cv', component: cv,},
+
+    {path: '/github', name: 'github', component: github,},
+
+    {path: '/ai', name: 'ai', component: ai,},
 ]
 
 const router = createRouter( {
