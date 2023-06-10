@@ -62,7 +62,7 @@ export default {
         particles: {
           background: {
             color: '#000000'
-          },dn
+          }
         }
       })
     }
