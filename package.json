@@ -21,7 +21,9 @@
     "axios": "^1.4.0",
     "particles.js": "^2.0.0",
     "vue": "^3.3.2",
-    "vue-router": "^4.0.13",
+    "vue-router": "^4.0.13"
+  },
+  "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
     "@tsconfig/node18": "^2.0.1",
     "@types/jsdom": "^21.1.1",
